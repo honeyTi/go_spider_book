@@ -75,12 +75,12 @@ func GetBookContent(url, book string) (booName, bookIndex, bookContent string, e
 	return
 }
 
-func httpToDatabase(bookName, bookIndex, bookContent string) {
+func httpToDatabase(bookName, bookIndex, bookContent, bookKey string) {
 	data := make(url.Values)
-	fmt.Println(bookContent)
 	data["book_name"] = []string{bookName}
 	data["book_index"] = []string{bookIndex}
 	data["book_content"] = []string{bookContent}
+	data["book_key"] = []string{bookKey}
 	resp, err := http.PostForm("http://127.0.0.1:8090/addBook25", data)
 	if err != nil {
 		fmt.Println(err)
@@ -94,11 +94,12 @@ func httpToDatabase(bookName, bookIndex, bookContent string) {
 
 	fmt.Println(string(body))
 }
-func BookDetailToDatabase(bookName, bookAuthor, bookDesc string) {
+func BookDetailToDatabase(bookName, bookAuthor, bookDesc, bookUrl string) {
 	data := make(url.Values)
 	data["book_name"] = []string{bookName}
 	data["book_author"] = []string{bookAuthor}
 	data["book_desc"] = []string{bookDesc}
+	data["book_key"] = []string{bookUrl}
 	resp, err := http.PostForm("http://127.0.0.1:8090/addbookdetail", data)
 	if err != nil {
 		fmt.Println(err)
@@ -148,11 +149,11 @@ func GetBookDesc(result, url string) {
 		break
 	}
 
-	BookDetailToDatabase(bookName, bookAuthor, bookDesc)
+	BookDetailToDatabase(bookName, bookAuthor, bookDesc , url)
 }
 
 // 获取爬取页面内容
-func DoWork(url, book string, c chan int) {
+func DoWork(url, book string) {
 	//开始获取书籍简绍主页内容
 	result, err := HttpGet(url)
 	if err != nil {
@@ -175,6 +176,7 @@ func DoWork(url, book string, c chan int) {
 	book_name := make([]string, 0)
 	book_index := make([]string, 0)
 	book_content := make([]string, 0)
+	book_key := make([]string, 0)
 	// 取出目录的网址拼接在一起
 	for _, data := range indexUrl {
 		indexList := "https://www.dushu.com" + data[1]
@@ -186,19 +188,18 @@ func DoWork(url, book string, c chan int) {
 		book_name = append(book_name, name)
 		book_index = append(book_index, index)
 		book_content = append(book_content, content)
+		book_key = append(book_key, book)
 	}
 
 	for i:= 0;i< len(book_index) ;i++  {
-		 httpToDatabase(book_name[i], book_index[i], book_content[i])
+		 httpToDatabase(book_name[i], book_index[i], book_content[i], book)
 	}
-	c <- 1
 }
 
 
 // 爬取书籍列表页面
 func BookDetail(url string) {
 	result, err := HttpGet(url)
-	page := make(chan int)
 	if err != nil {
 		fmt.Println("HttpGet method error in BookDetail method :", err)
 		return
@@ -214,9 +215,8 @@ func BookDetail(url string) {
 	for _, data := range urls {
 		indexList := "https://www.dushu.com" + data[1]
 		// 获取书籍内容
-		go DoWork(indexList, data[1], page)
+		DoWork(indexList, data[1])
 	}
-	fmt.Println(<-page)
 }
 
 // 爬取书籍内容，及链接网址
@@ -237,7 +237,7 @@ func BookList(url, endPage string) {
 		}
 	}
 	for _, data := range urls {
-		BookDetail(data)
+		 BookDetail(data)
 	}
 }
 
