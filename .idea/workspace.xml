@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47d98824-b365-4160-b4a2-7712832a73ce" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/burnbook.com/book_urls/book_urls.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/burnbook.com/content-map/content_get.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/burnbook.com/engine.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/burnbook.com/html_get/httpGet.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine.go" beforeDir="false" afterPath="$PROJECT_DIR$/engine.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine.go" beforeDir="false" afterPath="$PROJECT_DIR$/dushu.com/engine.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,32 +19,33 @@
     <session id="1958526484">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="go" value="2" />
+          <entry key="go" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Go" value="2" />
+          <entry key="Go" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="go" value="3942" />
+          <entry key="go" value="6786" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Go" value="3940" />
+          <entry key="Go" value="6784" />
           <entry key="RegExp" value="2" />
         </counts>
       </usages-collector>
@@ -48,16 +53,82 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/engine.go">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/burnbook.com/engine.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-416">
-              <caret line="189" column="52" lean-forward="true" selection-start-line="189" selection-start-column="52" selection-end-line="189" selection-end-column="52" />
+            <state relative-caret-position="290">
+              <caret line="49" column="73" selection-start-line="49" selection-start-column="59" selection-end-line="49" selection-end-column="73" />
+              <folding>
+                <element signature="e#14#42#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/burnbook.com/content-map/content_get.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="431">
+              <caret line="40" column="59" lean-forward="true" selection-start-line="40" selection-start-column="59" selection-end-line="40" selection-end-column="69" />
+              <folding>
+                <element signature="e#21#78#0" expanded="true" />
+                <element signature="e#225#227#0" />
+                <element signature="e#388#415#3" />
+                <element signature="e#441#491#0" />
+                <element signature="e#588#621#0" />
+                <element signature="e#731#770#0" />
+                <element signature="e#873#908#0" />
+                <element signature="e#1155#1188#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/burnbook.com/book_urls/book_urls.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="560">
+              <caret line="28" column="26" lean-forward="true" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+              <folding>
+                <element signature="e#19#76#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/burnbook.com/html_get/httpGet.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dushu.com/engine.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="860">
+              <caret line="161" column="5" lean-forward="true" selection-start-line="161" selection-start-column="5" selection-end-line="161" selection-end-column="5" />
+              <folding>
+                <element signature="e#14#99#0" expanded="true" />
+                <element signature="n#!!block;n#GetBookContent#0" />
+                <element signature="n#!!block;n#httpToDatabase#0" />
+                <element signature="n#!!block;n#BookList#0" />
+                <element signature="n#!!block;n#main#1" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
   </component>
   <component name="GOROOT" path="D:\Go" />
   <component name="Git.Settings">
@@ -67,6 +138,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/engine.go" />
+        <option value="$PROJECT_DIR$/dushu.com/engine.go" />
+        <option value="$PROJECT_DIR$/burnbook.com/html_get/httpGet.go" />
+        <option value="$PROJECT_DIR$/burnbook.com/engine.go" />
+        <option value="$PROJECT_DIR$/burnbook.com/content-map/content_get.go" />
+        <option value="$PROJECT_DIR$/burnbook.com/book_urls/book_urls.go" />
       </list>
     </option>
   </component>
@@ -76,9 +152,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-7" />
-    <option name="width" value="1932" />
+    <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -95,6 +171,28 @@
               <item name="book_spider_go" type="b2602c69:ProjectViewProjectNode" />
               <item name="book_spider_go" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="book_spider_go" type="b2602c69:ProjectViewProjectNode" />
+              <item name="book_spider_go" type="462c0819:PsiDirectoryNode" />
+              <item name="burnbook.com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="book_spider_go" type="b2602c69:ProjectViewProjectNode" />
+              <item name="book_spider_go" type="462c0819:PsiDirectoryNode" />
+              <item name="burnbook.com" type="462c0819:PsiDirectoryNode" />
+              <item name="book_urls" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="book_spider_go" type="b2602c69:ProjectViewProjectNode" />
+              <item name="book_spider_go" type="462c0819:PsiDirectoryNode" />
+              <item name="burnbook.com" type="462c0819:PsiDirectoryNode" />
+              <item name="content-map" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="book_spider_go" type="b2602c69:ProjectViewProjectNode" />
+              <item name="book_spider_go" type="462c0819:PsiDirectoryNode" />
+              <item name="dushu.com" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -102,11 +200,17 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../gin-restful-mysql" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\workspace\src\book_spider_go\dushu.com" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -120,7 +224,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Go Build.go build engine.go (1)">
+    <configuration name="go build engine.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="book_spider_go" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/burnbook.com/engine.go" />
+      <package value="book_spider_go" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build engine.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="book_spider_go" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -131,29 +245,33 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Go Build.go build engine.go" />
+      <item itemvalue="Go Build.go build engine.go (1)" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build engine.go (1)" />
         <item itemvalue="Go Build.go build engine.go" />
       </list>
     </recent_temporary>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.124200426" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.09808102" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3756786" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.42345276" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.1009772" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.51682955" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -168,10 +286,75 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/engine.go">
+    <entry file="file://D:/Go/src/strconv/atoi.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-416">
-          <caret line="189" column="52" lean-forward="true" selection-start-line="189" selection-start-column="52" selection-end-line="189" selection-end-column="52" />
+        <state relative-caret-position="615">
+          <caret line="200" column="5" selection-start-line="200" selection-start-column="5" selection-end-line="200" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Go/src/strconv/itoa.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dushu.com/engine.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="860">
+          <caret line="161" column="5" lean-forward="true" selection-start-line="161" selection-start-column="5" selection-end-line="161" selection-end-column="5" />
+          <folding>
+            <element signature="e#14#99#0" expanded="true" />
+            <element signature="n#!!block;n#GetBookContent#0" />
+            <element signature="n#!!block;n#httpToDatabase#0" />
+            <element signature="n#!!block;n#BookList#0" />
+            <element signature="n#!!block;n#main#1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/burnbook.com/html_get/httpGet.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/burnbook.com/engine.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="49" column="73" selection-start-line="49" selection-start-column="59" selection-end-line="49" selection-end-column="73" />
+          <folding>
+            <element signature="e#14#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/burnbook.com/content-map/content_get.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="40" column="59" lean-forward="true" selection-start-line="40" selection-start-column="59" selection-end-line="40" selection-end-column="69" />
+          <folding>
+            <element signature="e#21#78#0" expanded="true" />
+            <element signature="e#225#227#0" />
+            <element signature="e#388#415#3" />
+            <element signature="e#441#491#0" />
+            <element signature="e#588#621#0" />
+            <element signature="e#731#770#0" />
+            <element signature="e#873#908#0" />
+            <element signature="e#1155#1188#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/burnbook.com/book_urls/book_urls.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="28" column="26" lean-forward="true" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+          <folding>
+            <element signature="e#19#76#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
